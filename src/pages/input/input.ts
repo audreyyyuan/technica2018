@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ResultsPage } from '../results/results';
+
 
 /**
  * Generated class for the InputPage page.
@@ -15,14 +17,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class InputPage {
 
-	info = {}
-	// company : string;
-	// type : string;
-	// location : string;
-	// title : string;
+  resultPage : any;
+
+	info = {};
+
+  titleOptions = {
+    title: 'Position Title',
+    subtitle: 'choose the type of position above'
+  };
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+    this.resultPage = ResultsPage;
   }
 
   ionViewDidLoad() {
@@ -31,11 +38,11 @@ export class InputPage {
 
   logSubmit(event) {
 
+    if(this.info.gender !== "f" || this.info.gender !== "m") {
+      alert("gender is required");
+    }
+
   	console.log(this.info);
-  	// console.log(this.company);
-  	// console.log(this.type);
-  	// console.log(this.title);
-  	// console.log(this.location)
   }
 
 }

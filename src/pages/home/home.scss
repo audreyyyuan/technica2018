@@ -1,7 +1,8 @@
 page-home {
-  $SIDEMENU_TOP: #89fffd;
-  $SIDEMENU_BOTTOM: #77A1D3;
-  $SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
+  $SIDEMENU_TOP: #ff69b4 ;
+  $SIDEMENU_BOTTOM: #89fffd;
+  $SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.2);
+
 
   .toolbar-background-md {
       background: -webkit-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
@@ -33,12 +34,187 @@ page-home {
     display: block;
   }
 
-  body {
-    color: orange;
-    font-size: 50px;
+  ion-img{
+    box-shadow: 0 10px 10px rgba(0,0,0,0.12), 0 10px 20px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 20px;
   }
 
-  button {
-    background-color: orange;
+  h3{
+    color:white;
   }
+
+  .box {
+   width: 100%;
+   height: 30%;
+   border-radius: 5px;
+   box-shadow: 0 2px 30px rgba(black, .2);
+   background: lighten(#f1e3f9, 15%);
+   position: relative;
+   overflow: hidden;
+   transform: translate3d(0, 0, 0);
+   opacity: 0.8;
+   // background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+ }
+
+ .box-2 {
+  width: 100%;
+  height: 30%;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  background: lighten(#f1e3f9, 15%);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  // opacity: 0.8;
+  // background: linear-gradient(to bottom right, $SIDEMENU_BOTTOM, $SIDEMENU_TOP);
+}
+
+.box:hover {
+ width: 100%;
+ height: 33%;
+ border-radius: 5px;
+ box-shadow: 0 2px 30px rgba(black, .2);
+ background: white;
+ position: relative;
+ overflow: hidden;
+ transform: translate3d(0, 0, 0);
+ // opacity: 0.8;
+ background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+}
+
+.box:hover {
+ width: 100%;
+ height: 33%;
+ border-radius: 5px;
+ box-shadow: 0 2px 30px rgba(black, .2);
+ background: white;
+ position: relative;
+ overflow: hidden;
+ transform: translate3d(0, 0, 0);
+ // opacity: 0.8;
+ background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+}
+  ion-img:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color:black;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  html {
+    background: #eee;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .wave {
+      opacity: .4;
+      position: absolute;
+      left: 50%;
+      background: linear-gradient(to bottom, rgba(#E684AE, 1), rgba(#def, 0) 80%, rgba(white, .5));
+      width: 150%;
+      height: 100%;
+      margin-left: -250px;
+      margin-top: -250px;
+      transform-origin: 50% 48%;
+      border-radius: 43%;
+      animation: drift 3000ms infinite linear;
+    }
+
+    .wave.-three {
+      animation: drift 5000ms infinite linear;
+    }
+
+    .wave.-two {
+      animation: drift 7000ms infinite linear;
+      opacity: .4;
+      background: #00AAFF;
+    }
+    //
+    // .title {
+    //   position: absolute;
+    //   // left: 0;
+    //   // top: 0;
+    //   width: 100%;
+    //   z-index: 1;
+    //   // line-height: 380px; // changes how far up or down song title is
+    //   text-align: center;
+    //   //transform: translate3d(0, 0, 0);
+    //   color: white;
+    //   text-transform: uppercase;
+    //   // font-family: 'Playfair Display', serif;
+    //   letter-spacing: .4em;
+    //   font-size: 24px;
+    //   text-shadow: 0 1px 0 rgba(black, .1);
+    //   //text-indent: .3em;
+    // }
+    //
+    // #poof{
+    //   line-height: 380px;
+    // }
+    //
+    // #poofer{
+    //   line-height: 600px;
+    //   font-size: 14px;
+    // }
+
+    @keyframes drift {
+      from { transform: rotate(0deg); }
+      from { transform: rotate(360deg); }
+    }
+    //
+    // .blur {
+    //   /* All the background image supports */
+    //   transform: translate(0px, 0px, 0px);
+    //   background-image: -webkit-linear-gradient(bottom left, rgba(43, 40, 50, 0.8) 0%, rgba(83, 86, 99, 0.8) 45%, rgba(69, 77, 91, 0.6) 60%);
+    //   background-image: -moz-linear-gradient(bottom left, rgba(43, 40, 50, 0.8) 0%, rgba(83, 86, 99, 0.8) 45%, rgba(69, 77, 91, 0.6) 60%);
+    //   background-image: -o-linear-gradient(bottom left, rgba(43, 40, 50, 0.8) 0%, rgba(83, 86, 99, 0.8) 45%, rgba(69, 77, 91, 0.6) 60%);
+    //   background-image: linear-gradient(to top right, rgba(43, 40, 50, 0.8) 0%, rgba(83, 86, 99, 0.8) 45%, rgba(69, 77, 91, 0.6) 60%);
+    //   // position: absolute;
+    //   // width: 100%;
+    //   // height: 100%;
+    //
+    //   /* blur filters */
+    //   -webkit-filter: blur(20px);
+    //   -o-filter: blur(20px);
+    //   filter: blur(20px);
+    //
+    //   /* positioning and removing edges */
+    //   // top: -70px;
+    //   // right: -70px;
+    //   // left: -70px;
+    //   // padding: 70px;
+    // }
+    //
+    // .blur:after {
+    //   content: '';
+    //   position: absolute;
+    //   height: 100%;
+    //   width: 100%;
+    //   z-index: 1001;
+    //
+    //   /* Setting the gradient. Adds depth, and glass like effect. */
+    //   background-image: -webkit-linear-gradient(289deg, rgba(43,40,50,0.8) 0%, rgba(43,40,50,0.4) 46%, rgba(0,0,0,0.05) 50%);
+    //   background-image: -moz-linear-gradient(289deg, rgba(43,40,50,0.8) 0%, rgba(43,40,50,0.4) 46%, rgba(0,0,0,0.05) 50%);
+    //   background-image: -o-linear-gradient(289deg, rgba(43,40,50,0.8) 0%, rgba(43,40,50,0.4) 46%, rgba(0,0,0,0.05) 50%);
+    //   background-image: linear-gradient(-19deg, rgba(43,40,50,0.8) 0%, rgba(43,40,50,0.4) 46%, rgba(0,0,0,0.05) 50%);
+    //
+    //   /* Blur to add depth. High to create smooth transition */
+    //   -webkit-filter: blur(60px);
+    //   -o-filter: blur(60px);
+    //   filter: blur(60px);
+    // }
+
 }

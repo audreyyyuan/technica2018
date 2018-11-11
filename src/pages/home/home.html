@@ -1,15 +1,53 @@
 <ion-header>
-	<ion-navbar>
-		<ion-title>
-			Technica
-		</ion-title>
-	</ion-navbar>
+	<!-- <ion-navbar> -->
+<h3 ion-text text-center>#talkpay</h3>
+	<!-- <ion-title>#talkpay</ion-title> -->
+<!-- </ion-navbar> -->
 </ion-header>
 
 <ion-content padding>
-	Hello World<br />
-
-
+<!--
 	<button ion-button [navPush]="nextPage">View Salary Information</button> <br />
-	<button ion-button [navPush]="inputPage">Input Information</button>
+	<button ion-button [navPush]="inputPage">Input Information</button> -->
+<br><br><br><br><br>
+<div class='wave -one'></div>
+<div class='wave -two'></div>
+<div class='wave -three'></div>
+		<div class='box' [navPush]="nextPage">
+			<br><br><br>
+			<h1>Browse</h1>
+			<div class="blur">
+			</div>
+			</div>
+			<br><br><br><br>
+			<div class='box' [navPush]="inputPage">
+					<br><br><br>
+					<h1>Share</h1>
+				<div class="blur">
+				</div>
+				</div>
+<!--
+			<ion-img height = "150px" width = 100% [navPush]="inputPage" src="https://user-images.githubusercontent.com/16736130/48309222-27e9bf80-e543-11e8-9374-0ea778aa7335.png"></ion-img>
+			<br><br><br><br>
+			<ion-img height = "150px" width = 100% [navPush]="inputPage" src="https://user-images.githubusercontent.com/16736130/48309238-67b0a700-e543-11e8-928a-b41d00cd80a2.png"></ion-img> -->
+
+			<!-- </div> -->
+
+	<!-- <ion-col>
+		<img height = "150px" width = 100% [navPush]="inputPage" src={{data[1].src}}>
+	</ion-col> -->
+
+	<!-- <ion-slides>
+  <ion-slide>
+		<ion-col *ngFor="let d of data; let i=index">
+    <img height = "150px" width = 100% [navPush]="aboutPage" src={{data[i].src}}>
+  </ion-col>
+  </ion-slide>
+  <ion-slide>
+    <h1>Slide 2</h1>
+  </ion-slide>
+  <ion-slide>
+    <h1>Slide 3</h1>
+  </ion-slide>
+</ion-slides> -->
 </ion-content>

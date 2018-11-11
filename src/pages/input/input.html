@@ -17,14 +17,66 @@
 <ion-content padding>
 
   <!-- form -->
+
+  <!-- <ion-list radio-group [(ngModel)]="relationship">
+    <ion-label>Gender</ion-label>
+    <ion-item>
+      <ion-label>Female</ion-label>
+      <ion-radio value="f" checked></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Male</ion-label>
+      <ion-radio value="m"></ion-radio>
+    </ion-item>
+  </ion-list> -->
+
+  <ion-item>
+    <ion-label>Gender*</ion-label>
+    <ion-select [(ngModel)]="info.gender" interface="popover" required>
+      <ion-option value="f">Female</ion-option>
+      <ion-option value="m">Male</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <br /> <br />
   
   <ion-item>
     <ion-input [(ngModel)]="info.company" type="text" placeholder="Company"></ion-input>
   </ion-item>
 
   <ion-item>
+    <ion-label>Location</ion-label>
+    <ion-select [(ngModel)]="info.location" interface="popover">
+      <ion-option value="atl">Atlanta, GA</ion-option>
+      <ion-option value="aus">Austin, TX</ion-option>
+      <ion-option value="sfo">Bay Area, CA</ion-option>
+      <ion-option value="bos">Boston, MA</ion-option>
+      <ion-option value="chi">Chicago, IL</ion-option>
+      <ion-option value="luk">Cincanatti, OH</ion-option>
+      <ion-option value="dfw">Dallas, TX</ion-option>
+      <ion-option value="den">Denver, CO</ion-option>
+      <ion-option value="htx">Houston, TX</ion-option>
+      <ion-option value="lax">LA Area, CA</ion-option>
+      <ion-option value="lhr">London, UK</ion-option>
+      <ion-option value="lux">Luxembourg, LU</ion-option>
+      <ion-option value="iad">McLean, VA</ion-option>
+      <ion-option value="nj">New Jersey</ion-option>
+      <ion-option value="nyc">New York City, NY</ion-option>
+      <ion-option value="ont">Ontario, CA</ion-option>
+      <ion-option value="phl">Philadelphia, PA</ion-option>
+      <ion-option value="pit">Pittsburgh, PA</ion-option>
+      <ion-option value="rdm">Redmond, WA</ion-option>
+      <ion-option value="sea">Seattle, WA</ion-option>
+      <ion-option value="yyz">Toronto, Canda</ion-option>
+      <ion-option value="tus">Tucson, AZ</ion-option>
+      <ion-option value="van">Vancouver, BC</ion-option>
+      <ion-option value="dca">Washington, DC</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
     <ion-label>Position Type</ion-label>
-    <ion-select [(ngModel)]="info.type" interface="action-sheet">
+    <ion-select [(ngModel)]="info.type" interface="popover">
       <ion-option value="intern">Intern</ion-option>
       <ion-option value="fulltime">Full Time</ion-option>
       <ion-option value="other">Other</ion-option>
@@ -33,7 +85,7 @@
 
   <ion-item>
     <ion-label>Position Title</ion-label>
-    <ion-select [(ngModel)]="info.title" interface="action-sheet">
+    <ion-select [(ngModel)]="info.title" interface="action-sheet" [selectOptions]="titleOptions">
       <ion-option value="swe">Software Enginner</ion-option>
       <ion-option value="sde">Software Developer </ion-option>
       <ion-option value="aswe">Associate Software Engineer</ion-option>
@@ -59,39 +111,15 @@
     </ion-select>
   </ion-item>
 
+  <br /> <br />
+  
   <ion-item>
-    <ion-label>Location</ion-label>
-    <ion-select [(ngModel)]="info.location" interface="popover">
-      <ion-option value="az">Arizona</ion-option>
-      <ion-option value="atl">Atlanta, GA</ion-option>
-      <ion-option value="aus">Austin, TX</ion-option>
-      <ion-option value="sf">Bay Area, CA</ion-option>
-      <ion-option value="bos">Boston, MA</ion-option>
-      <ion-option value="chi">Chicago, IL</ion-option>
-      <ion-option value="luk">Cincanatti, OH</ion-option>
-      <ion-option value="dfw">Dallas, TX</ion-option>
-      <ion-option value="den">Denver, CO</ion-option>
-      <ion-option value="htx">Houston, TX</ion-option>
-      <ion-option value="la">LA Area, CA</ion-option>
-      <ion-option value="lon">London, UK</ion-option>
-      <ion-option value="lux">Luxembourg</ion-option>
-      <ion-option value="mclean">McLean, VA</ion-option>
-      <ion-option value="md">Maryland</ion-option>
-      <ion-option value="mw">Mid West</ion-option>
-      <ion-option value="nj">New Jersey</ion-option>
-      <ion-option value="nyc">New York City, NY</ion-option>
-      <ion-option value="ont">Ontario, CA</ion-option>
-      <ion-option value="phl">Philadelphia, PA</ion-option>
-      <ion-option value="pit">Pittsburgh, PA</ion-option>
-      <ion-option value="rdm">Redmond, WA</ion-option>
-      <ion-option value="sea">Seattle, WA</ion-option>
-      <ion-option value="yyz">Toronto, Canda</ion-option>
-      <ion-option value="van">Vancouver, BC</ion-option>
-      <ion-option value="dc">Washington, DC</ion-option>
-    </ion-select>
+    <ion-input [(ngModel)]="info.salary" type="text" placeholder="Base Salary"></ion-input>
   </ion-item>
 
   <button ion-button (click)="logSubmit($event)">Submit</button> <br />
+
+  <button ion-button [navPush]="resultPage">see results</button> <br />
 
   <button ion-button navPop>Go Back</button>
 </ion-content>
