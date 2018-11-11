@@ -15,13 +15,25 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class InputPage {
 
-  
+	company : string;
+	type : string;
+	title : string;
+	location : string;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InputPage');
+  }
+
+  logSubmit(event) {
+
+  	console.log(company);
+  	console.log(type);
+  	console.log(title);
+  	console.log(location);
   }
 
 }
