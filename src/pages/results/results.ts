@@ -17,9 +17,11 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 })
 export class ResultsPage {
 
-  public doughnutChartLabels:string[] = ['Female', 'Male'];
-  public chartData:number[] = [109000, 110285.7];
-  public chartType:string = 'doughnut';
+  min = 105594;
+  max = 116347;
+  doughnutChartLabels:string[] = ['Female Pay ($)', 'Male Pay ($)'];
+  chartData:number[] = [Math.floor(Math.random() * (max - min)) + min, Math.floor(Math.random() * (max - min)) + min];
+  chartType:string = 'doughnut';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
