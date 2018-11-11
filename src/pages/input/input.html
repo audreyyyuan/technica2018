@@ -16,14 +16,14 @@
 <ion-content padding>
 
   <!-- form -->
-
+  
   <ion-item>
-    <ion-input [(ngModel)]="company" type="text" placeholder="Company"></ion-input>
+    <ion-input [(ngModel)]="info.company" type="text" placeholder="Company"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label>Position Type</ion-label>
-    <ion-select [(ngModel)]="type" interface="action-sheet">
+    <ion-select [(ngModel)]="info.type" interface="action-sheet">
       <ion-option value="intern">Intern</ion-option>
       <ion-option value="fulltime">Full Time</ion-option>
       <ion-option value="other">Other</ion-option>
@@ -32,7 +32,7 @@
 
   <ion-item>
     <ion-label>Position Title</ion-label>
-    <ion-select [(ngModel)]="title" interface="action-sheet">
+    <ion-select [(ngModel)]="info.title" interface="action-sheet">
       <ion-option value="swe">Software Enginner</ion-option>
       <ion-option value="sde">Software Developer </ion-option>
       <ion-option value="aswe">Associate Software Engineer</ion-option>
@@ -60,7 +60,7 @@
 
   <ion-item>
     <ion-label>Location</ion-label>
-    <ion-select [(ngModel)]="location" interface="popover">
+    <ion-select [(ngModel)]="info.location" interface="popover">
       <ion-option value="az">Arizona</ion-option>
       <ion-option value="atl">Atlanta, GA</ion-option>
       <ion-option value="aus">Austin, TX</ion-option>
@@ -90,7 +90,7 @@
     </ion-select>
   </ion-item>
 
-  <button ion-button>Submit</button> <br />
+  <button ion-button (click)="logSubmit($event)">Submit</button> <br />
 
   <button ion-button navPop>Go Back</button>
 </ion-content>
