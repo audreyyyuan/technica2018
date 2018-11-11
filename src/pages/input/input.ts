@@ -15,10 +15,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class InputPage {
 
-	company : string;
-	type : string;
-	title : string;
-	location : string;
+	info = {}
+	// company : string;
+	// type : string;
+	// location : string;
+	// title : string;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -30,10 +31,11 @@ export class InputPage {
 
   logSubmit(event) {
 
-  	console.log(company);
-  	console.log(type);
-  	console.log(title);
-  	console.log(location);
+  	console.log(this.info);
+  	// console.log(this.company);
+  	// console.log(this.type);
+  	// console.log(this.title);
+  	// console.log(this.location)
   }
 
 }
