@@ -15,11 +15,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NextPage {
 
+  info = {}
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NextPage');
+  }
+
+  logSubmit(event) {
+
+  	console.log(this.info);
+  	// console.log(this.company);
+  	// console.log(this.type);
+  	// console.log(this.title);
+  	// console.log(this.location)
   }
 
 }
