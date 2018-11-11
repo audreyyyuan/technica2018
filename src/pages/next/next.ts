@@ -15,8 +15,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NextPage {
 
-  constructor() {}
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
