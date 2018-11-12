@@ -1,4 +1,5 @@
-# Technica 2018 - Devpost: https://devpost.com/software/talkpay
+# Technica 2018
+Devpost: https://devpost.com/software/talkpay
 ## Inspiration
 We are inspired by the #talkpay movement, which promotes equal salary wages through bringing attention to the increasing wage gap. With this in mind, we encourage transparent conversations regarding salary and advocate for equal pay regardless of gender, ethnicity, affiliations (ie. religion) and/or background.
 
