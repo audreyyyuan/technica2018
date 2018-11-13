@@ -16,11 +16,14 @@ import { AlertController } from 'ionic-angular';
 })
 export class InputPage {
 
-	info = {}
-	// company : string;
-	// type : string;
-	// location : string;
-	// title : string;
+  resultPage : any;
+
+	info = {};
+
+  titleOptions = {
+    title: 'Position Title',
+    subtitle: 'choose the type of position above'
+  };
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
@@ -28,15 +31,6 @@ export class InputPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InputPage');
-  }
-
-  logSubmit(event) {
-
-  	console.log(this.info);
-  	// console.log(this.company);
-  	// console.log(this.type);
-  	// console.log(this.title);
-  	// console.log(this.location)
   }
 
   showAlert() {

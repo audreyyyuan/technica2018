@@ -29,4 +29,13 @@ export class NextPage {
     // console.log(db.scanTable());
   }
 
+  logSubmit(event) {
+
+  	// console.log(this.info);
+  	// console.log(this.company);
+  	// console.log(this.type);
+  	// console.log(this.title);
+  	// console.log(this.location)
+  }
+
 }

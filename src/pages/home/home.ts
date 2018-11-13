@@ -14,20 +14,7 @@ export class HomePage {
   data: any;
 
   constructor(public navCtrl: NavController) {
-
   	this.nextPage = NextPage;
   	this.inputPage = InputPage;
-
-    this.data = [
-    {
-      "src": "https://raw.githubusercontent.com/gotechnica/technica-mobile-app/master/assets/imgs/Banner03_GenericHackathon.png"
-    },
-    {
-      "src": "https://raw.githubusercontent.com/gotechnica/technica-mobile-app/master/assets/imgs/Banner03_GenericHackathon.png"
-    },
-    {
-      "src": "https://raw.githubusercontent.com/gotechnica/technica-mobile-app/master/assets/imgs/Banner03_GenericHackathon.png"
-    }
-   ];
   }
 }

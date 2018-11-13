@@ -17,6 +17,7 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 })
 export class ResultsPage {
 
+  // Placeholder for testing, non-testing: pull from DynamoDB
   doughnutChartLabels:string[] = ['Female Pay ($)', 'Male Pay ($)'];
   chartData:number[] = [Math.floor(Math.random() * (116347 - 105594)) + 100000,
     Math.floor(Math.random() * (116347 - 105594)) + 115594];
