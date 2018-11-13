@@ -3,5 +3,47 @@ page-input {
 		color: orange;
 		font-size: 500px;
 	}
+
+	.button {
+	 z-index:9999;
+	 border-color: white;
+	 color: white;
+	 position: absolute;
+	 left: 230px;
+	 bottom: 20px;
+ }
+
+ .button {
+	 z-index:9999;
+	 background: #212025;
+	 background-color: #212025;
+	 border-color: white;
+	 color: white;
+	 position: absolute;
+	 left: 230px;
+	 bottom: 20px;
+ }
+
+ .button:active {
+	z-index:9999;
+	background: linear-gradient(#ff69b4, #89fffd);
+	background-color: linear-gradient(#ff69b4, #89fffd);
+	border-color: white;
+	color: white;
+	position: absolute;
+	left: 230px;
+	bottom: 20px;
 }
 
+.button:activated {
+	z-index:9999;
+	background: linear-gradient(#ff69b4, #89fffd);
+	background-color: linear-gradient(#ff69b4, #89fffd);
+	border-color: white;
+	color: white;
+	position: absolute;
+	left: 230px;
+	bottom: 20px;
+
+}
+}

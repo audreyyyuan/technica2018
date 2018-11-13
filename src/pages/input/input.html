@@ -16,14 +16,34 @@
 <ion-content padding>
 
   <!-- form -->
-  
+
+  <ion-item>
+    <ion-label>Gender</ion-label>
+    <ion-select [(ngModel)]="info.gender" interface="popover">
+      <ion-option value="intern">Female</ion-option>
+      <ion-option value="fulltime">Male</ion-option>
+      <ion-option value="other">Non-Binary</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <br /> <br />
+<!--
   <ion-item>
     <ion-input [(ngModel)]="info.company" type="text" placeholder="Company"></ion-input>
+  </ion-item> -->
+
+  <ion-item>
+    <ion-label>Company</ion-label>
+    <ion-input [(ngModel)]="info.company" type="text">
+      <!-- <ion-option value="intern">Female</ion-option>
+      <ion-option value="fulltime">Male</ion-option>
+      <ion-option value="other">Non-Binary</ion-option> -->
+    </ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label>Position Type</ion-label>
-    <ion-select [(ngModel)]="info.type" interface="action-sheet">
+    <ion-select [(ngModel)]="info.type" interface="popover">
       <ion-option value="intern">Intern</ion-option>
       <ion-option value="fulltime">Full Time</ion-option>
       <ion-option value="other">Other</ion-option>
@@ -90,7 +110,20 @@
     </ion-select>
   </ion-item>
 
-  <button ion-button (click)="logSubmit($event)">Submit</button> <br />
+  <br /> <br />
 
-  <button ion-button navPop>Go Back</button>
+  <ion-item>
+    <ion-label>Base Salary</ion-label>
+    <ion-input [(ngModel)]="info.salary" type="text">
+      <!-- <ion-option value="intern">Female</ion-option>
+      <ion-option value="fulltime">Male</ion-option>
+      <ion-option value="other">Non-Binary</ion-option> -->
+    </ion-input>
+  </ion-item>
+
+
+  <button ion-button (click)='showAlert()'>Submit</button> <br />
+
+  <!-- <button ion-button navPop>Go Back</button> -->
+
 </ion-content>

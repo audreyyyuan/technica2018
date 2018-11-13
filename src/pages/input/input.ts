@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the InputPage page.
@@ -22,7 +23,7 @@ export class InputPage {
 	// title : string;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -36,6 +37,15 @@ export class InputPage {
   	// console.log(this.type);
   	// console.log(this.title);
   	// console.log(this.location)
+  }
+
+  showAlert() {
+    const alert = this.alertCtrl.create({
+      title: 'Confirm',
+      subTitle: 'By clicking OK, your anonymous submission will be sent to reviewers for audit. Thank you for supporting the #talkpay movement.',
+      buttons: ['OK']
+    });
+    alert.present();
   }
 
 }

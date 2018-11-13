@@ -7,25 +7,31 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { NextPage } from '../pages/next/next';
-import { InputPage } from '../pages/input/input'
+import { InputPage } from '../pages/input/input';
+import { ResultsPage } from '../pages/results/results';
+
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     NextPage,
-    InputPage
+    InputPage,
+    ResultsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ChartsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     NextPage,
-    InputPage
+    InputPage,
+    ResultsPage
   ],
   providers: [
     StatusBar,

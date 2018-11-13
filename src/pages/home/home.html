@@ -6,14 +6,15 @@
 </ion-header>
 
 <ion-content padding>
+	<button ion-button style="text-align: right">Register</button> <br />
 <!--
 	<button ion-button [navPush]="nextPage">View Salary Information</button> <br />
 	<button ion-button [navPush]="inputPage">Input Information</button> -->
-<br><br><br><br><br>
+<br><br>
 <div class='wave -one'></div>
 <div class='wave -two'></div>
 <div class='wave -three'></div>
-		<div class='box' [navPush]="inputPage">
+		<div class='box' [navPush]="nextPage">
 			<br><br><br>
 			<h1>Browse</h1>
 			<div class="blur">
@@ -26,6 +27,7 @@
 				<div class="blur">
 				</div>
 				</div>
+				<!-- <button ion-button (click)='showAlert()'>Submit</button> <br /> -->
 <!--
 			<ion-img height = "150px" width = 100% [navPush]="inputPage" src="https://user-images.githubusercontent.com/16736130/48309222-27e9bf80-e543-11e8-9374-0ea778aa7335.png"></ion-img>
 
